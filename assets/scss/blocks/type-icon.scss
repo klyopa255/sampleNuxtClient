@@ -1,0 +1,16 @@
+.type-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 8px;
+
+  &--music {
+    background: #F73CD9;
+  }
+  &--dance {
+    background: #00A2EE;
+  }
+}

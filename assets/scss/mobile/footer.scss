@@ -1,0 +1,136 @@
+@media screen and (max-width: 1350px) {
+  .footer {
+    &__socials {
+      width: 160px;
+    }
+
+    .secondary-nav__list,
+    &__list {
+      margin-left: 30px;
+      min-width: 310px;
+      height: 180px;
+    }
+
+    .secondary-nav__item {
+      width: 131px;
+    }
+
+    &__item:nth-child(even) {
+      margin-right: 18px;
+    }
+
+    .socials__item {
+      margin-right: 10px;
+    }
+
+    .socials__icon {
+      width: 30px;
+    }
+
+    .subscribe__form {
+      width: 100%;
+    }
+
+    .subscribe--footer {
+      flex-grow: 1;
+      max-width: 533px;
+      margin-left: 20px;
+      min-width: 364px;
+    }
+
+    .subscribe__input {
+      min-width: 198px;
+      width: calc(100% - 160px);
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    &__soc-wrapper {
+      max-width: 150px;
+    }
+    &__wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .footer {
+    .subscribe--footer {
+      min-width: auto;
+    }
+    .secondary-nav__list,
+    &__list {
+      height: auto;
+      flex-basis: 20%;
+      min-width: auto;
+    }
+
+    &__soc-wrapper {
+      flex-basis: 20%;
+    }
+
+    &__subscribe {
+      flex-basis: 60%;
+    }
+
+    &__wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 764px) {
+  .footer {
+    &__top {
+      flex-direction: column;
+    }
+
+    .secondary-nav__list,
+    &__list {
+      flex-basis: 100%;
+      text-align: center;
+      order: 3;
+    }
+
+    &__soc-wrapper {
+      flex-basis: 100%;
+      max-width: 100%;
+      order: 1;
+      text-align: center;
+    }
+
+    &__subscribe {
+      flex-basis: 100%;
+      order: 2;
+      margin-left: 0;
+
+      .subscribe__title {
+        display: none;
+      }
+    }
+
+    &__socials {
+      justify-content: center;
+      margin: 0 auto !important;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .footer {
+    .subscribe__input {
+      width: 100%;
+      margin-right: 0;
+    }
+    .subscribe__submit-btn {
+      margin-left: -122px;
+      width: 122px;
+      position: absolute;
+    }
+  }
+}

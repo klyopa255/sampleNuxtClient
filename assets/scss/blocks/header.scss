@@ -1,0 +1,114 @@
+// All current style code is in the Header component now. To change the Header styles please go to the Header.vue components
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  &__mobile-switcher,
+  &__mobile-title {
+    display: none;
+  }
+
+  &__burg {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    display: none;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  &__burg-element {
+    background-color: #fff;
+      width: 100%;
+      height: 3px;
+  }
+
+  &__interaction-group {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  &__wrapper {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 24px;
+  }
+
+  &__logo-wrapper {
+    transform: translateY(4px);
+  }
+
+  &__search-form {
+    max-width: 440px;
+    position: relative;
+    margin-left: 105px;
+    flex-basis: 440px;
+    margin-right: 20px;
+
+    &--transparent {
+      transform: translateX(-77px);
+    }
+  }
+
+  &__search-input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
+    border: none;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    border-radius: 4px;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #fff;
+    max-height: 47px;
+
+    &::placeholder {
+      font-family: Jost, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 29px;
+      color: #fff;
+    }
+  }
+
+  &__search-label {
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    left: 10px;
+  }
+
+  &__nav {
+    &--home,
+    &--transparent {
+      width: 500px;
+    }
+  }
+
+  &--transparent {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+    padding-bottom: 24px;
+    background-color: #fff;
+
+    .header__search-input {
+      background: #F1F1F1;
+      color:#000;
+      &::placeholder {
+          color:rgba(94, 94, 94, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@media screen and (max-width: 960px) {
+    .personal-info {
+        outline: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .personal-info {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+
+        &__bg {
+            max-height: 320px;
+            height: 78vw;
+        }
+
+        &__btn {
+            max-width: 325px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        &__avatar {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 320px;
+            max-height: 320px;
+            min-width: 210px;
+            min-height: 210px;
+            height: 62vw;
+            width: 62vw;
+        }
+
+        &__summary-artist-info {
+            color: #000;
+        }
+    }
+
+    .personal-info-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

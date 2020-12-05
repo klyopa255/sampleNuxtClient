@@ -1,0 +1,225 @@
+// All current style code is in the Navbar component now. To change the Navbar styles please go to the Navbar.vue components
+.user-nav {
+  @include list-reset();
+
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+
+  &__login-block {
+    display: flex;
+    @include list-reset();
+  }
+
+  &__note-count {
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 6px;
+    right: -7px;
+
+    &--pink {
+      background: #ff496d;
+    }
+
+    &--purple {
+      background: #925ffe;
+    }
+  }
+
+  &__link {
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+
+    &--arrow {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        border: 2px solid transparent;
+        background-color: transparent;
+        border-left-color: white;
+        border-bottom-color: white;
+        top: 12px;
+        right: -20px;
+        z-index: 5;
+        transform: rotateZ(-45deg);
+      }
+    }
+
+    &--bold {
+      font-weight: 600;
+    }
+
+    &--sign-in {
+      margin-top: 0;
+      padding-top: 10px;
+      padding-bottom: 9px;
+      font-weight: 600;
+      display: block;
+      width: 141px;
+      text-align: center;
+      background: #d6a94f;
+      border-radius: 4px;
+      color: #000;
+    }
+
+    &--button {
+      margin: 0;
+      padding: 0;
+      padding-top: 9px;
+      border: none;
+      background-color: transparent;
+      border-radius: 50%;
+      display: inline-flex;
+      position: relative;
+      white-space: nowrap;
+
+      img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        overflow: hidden;
+        transform: translateY(-4px);
+      }
+    }
+
+    &--user {
+      padding-right: 10px;
+      margin-left: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        border: 2px solid white;
+        background-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        top: 14px;
+        right: 50%;
+        z-index: 5;
+        transform: translateX(50%) rotateZ(-45deg);
+      }
+    }
+  }
+
+  &--transparent {
+    color: #000;
+
+    .user-nav__link {
+      color: #000;
+      &--user::after {
+        border-color: black;
+        border-right-color: transparent;
+        border-top-color: transparent;
+      }
+
+      &--arrow {
+        &::before {
+          border: 2px solid transparent;
+          background-color: transparent;
+          border-left-color: black;
+          border-bottom-color: black;
+        }
+      }
+    }
+
+    .user-nav__note-count {
+      color: #fff;
+    }
+  }
+
+  &__item {
+    display: block;
+    margin-right: 25px;
+
+    &--for-mobile {
+      @media (min-width: 960px) {
+        display: none;
+      }
+    }
+
+    &--flex {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    &--active {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        right: -6px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &--hidden {
+      display: none;
+    }
+
+    &--popover {
+      position: relative;
+      display: flex;
+
+      &--left {
+        min-width: 176px;
+        min-height: 47px;
+      }
+    }
+
+    &--location {
+      position: relative;
+      width: 150px;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  &__pop-over {
+    position: absolute;
+    right: 0;
+    top: 100%;
+
+    &--user {
+      top: 0;
+      right: -35px;
+    }
+  }
+
+  &__icn {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+    stroke: #fff;
+
+    &--black {
+      fill: #000;
+      stroke: #000;
+    }
+  }
+}

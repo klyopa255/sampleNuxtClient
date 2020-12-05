@@ -1,0 +1,22 @@
+.hashtags {
+  width: 100%;
+
+  @include list-reset();
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 9px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 19px;
+    line-height: 29px;
+    color: #030303;
+  }
+}

@@ -1,0 +1,60 @@
+.more-btn {
+  position: relative;
+
+  &__button {
+    @include button-reset();
+
+    border-radius: 50%;
+    background-color: transparent;
+    max-height: 32px;
+
+    &:hover,
+    &--pop-over {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    &--red {
+      font-family: Jost, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 29px;
+      text-align: center;
+      color: #ff496d;
+      border: 1px solid #ff496d;
+      border-radius: 4px;
+      padding: 0 30px;
+      padding-bottom: 9px;
+    }
+
+    &--gray {
+      font-family: Jost, sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 29px;
+      text-align: center;
+      color: #ff496d;
+      border-radius: 4px;
+      padding: 0 30px;
+      padding-bottom: 9px;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__icon {
+    fill: #fff;
+
+    &--black {
+      fill: #000;
+    }
+  }
+
+  &__pop-over {
+    position: absolute;
+    left: -184px;
+  }
+}

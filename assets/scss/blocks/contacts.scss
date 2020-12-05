@@ -1,0 +1,54 @@
+.contacts {
+  &__title {
+    margin-top: 32px;
+    margin-bottom: 0;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 46px;
+    color: #000;
+  }
+
+  &__list {
+    margin-top: 29px;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 15px;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #925ffe;
+
+    &--tel {
+      font-family: Jost, sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px;
+      color: #000;
+    }
+  }
+
+  &__zip-code,
+  &__zip-title,
+  &__address {
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000;
+    display: block;
+    margin-top: 15px;
+  }
+
+  &__zip-code,
+  &__zip-title {
+    display: inline-block;
+  }
+}

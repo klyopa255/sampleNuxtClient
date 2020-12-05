@@ -1,0 +1,56 @@
+.share-buttons {
+  position: relative;
+  color: #fff;
+  margin-right: auto;
+
+  &__btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    padding-left: 8px;
+    padding-right: 29px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #fff;
+    z-index: -1;
+
+    &--likes {
+      background-color: #925ffe;
+
+      @include hover-active(#8253e8, #7346d2);
+
+      margin-right: 5px;
+    }
+
+    &--share {
+      background-color: #ff496d;
+      padding-right: 46px;
+
+      & svg {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__icn {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__pop-over {
+    position: absolute;
+    transform: translateY(-120%) translateX(40%);
+  }
+
+  &--z-min2 {
+    z-index: -2;
+  }
+}

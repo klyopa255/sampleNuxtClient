@@ -1,0 +1,35 @@
+.footer {
+  .secondary-nav__list {
+    @include list-reset();
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 160px;
+    margin-left: 80px;
+  }
+  
+  .secondary-nav__item {
+    width: 200px;
+    margin-bottom: 8px;
+    
+    &:nth-child(even) {
+      margin-right: 30px;
+    }
+  }
+  
+  .secondary-nav__link {
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFF;
+  }
+}
+
+.navigation {
+  .secondary-nav__list {
+    display: none;
+  }
+}

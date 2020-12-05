@@ -1,0 +1,17 @@
+@media screen and (max-width: 736px) {
+    .aside-info--right {
+        margin: 0 auto;
+        width: 100%;
+
+        .media__list--profile {
+            justify-content: center;
+        }
+
+        .aside-info__media {
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            min-height: auto;
+        }
+    }
+}

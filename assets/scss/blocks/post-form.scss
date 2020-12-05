@@ -1,0 +1,72 @@
+.post-form {
+  padding: 16px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-bottom: 29px;
+  position: relative;
+
+  &__legend {
+    display: block;
+    margin-bottom: 13px;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000;
+  }
+
+  &__input {
+    margin: 0;
+    padding: 16px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    width: 100%;
+    background: #f1f1f1;
+    border-radius: 6px;
+    border: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 23px;
+
+    &::placeholder {
+      font-family: Jost, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 23px;
+      color: #acacac;
+    }
+  }
+
+  &__controls {
+    @include list-reset();
+
+    position: absolute;
+    display: flex;
+    width: 112px;
+    bottom: 25px;
+    right: 30px;
+  }
+
+  &__controls-item {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__button {
+    @include button-reset();
+
+    background-color: transparent;
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+}

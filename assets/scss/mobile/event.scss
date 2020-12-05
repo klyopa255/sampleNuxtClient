@@ -1,0 +1,94 @@
+@media screen and (max-width: 1110px) {
+  .event--home {
+    .event__img-link {
+      width: 352px;
+      height: 420px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .event {
+    min-height: auto;
+    height: 574px;
+
+    &--home {
+      height: auto;
+    }
+
+    &__img {
+      width: auto;
+      height: auto;
+    }
+
+    &__to-calendar {
+      width: 197px;
+    }
+
+    &__img-link {
+      height: 226px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid transparent;
+
+      &--common {
+        width: auto;
+      }
+
+      img {
+        width: auto;
+        height: 105%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .event--home {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .event__text, 
+    .event__img-link {
+      display: none;
+    }
+
+    .event__title {
+      order: 1;
+    }
+
+    .event__time-price {
+      order: 2;
+      margin-left: 0;
+      margin-bottom: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .event__host {
+      order: 3;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .event__type-icon {
+      order: 4;
+      width: 28px;
+      height: 28px;
+    }
+
+    .event__to-calendar {
+      order: 5;
+      position: relative;
+      margin-left: 15px;
+    }
+  }
+
+  .top-events__item--home .event--home {
+    flex-direction: row !important;
+  }
+}

@@ -1,0 +1,52 @@
+.about {
+  margin-top: 50px;
+  padding-bottom: 73px;
+  width: 100%;
+  background-color: #000;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 99.81%), url("~assets/img/MaskGroup11.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  font-family: Jost, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFF;
+}
+
+.about__wrapper {
+  width: 100%;
+  padding-top: 54px;
+  max-width: 1440px;
+}
+
+.about__logo-wrapper {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.about__text {
+  width: 689px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+
+.about__link {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 254px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 52px;
+  font-family: Jost, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFF;
+  border: 1px solid #FFF;  
+  border-radius: 4px;
+}

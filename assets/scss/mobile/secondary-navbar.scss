@@ -1,0 +1,32 @@
+//mobile menu
+@media screen and (max-width: $mobile-menu) {
+  .secondary-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation {
+    .secondary-nav__list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .footer {
+    .secondary-nav__list {
+      display: none;
+    }
+  }
+
+  .secondary-nav__link {
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFF;
+    display: block;
+    margin-top: 10px;
+  }
+}

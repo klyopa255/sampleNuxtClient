@@ -1,0 +1,86 @@
+/* Base for label styling */
+
+.fake-checkbox__wrapper {
+  font-family: Jost, sans-serif;
+  text-align: center;
+}
+
+.fake-checkbox__input:not(:checked),
+.fake-checkbox__input:checked {
+  position: absolute;
+  left: -9999px;
+}
+.fake-checkbox__input:not(:checked) + label,
+.fake-checkbox__input:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+/* checkbox aspect */
+
+.fake-checkbox__input:not(:checked) + label::before,
+.fake-checkbox__input:checked + label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.fake-checkbox__input:focus + label::before {
+  outline: 2px solid #000;
+}
+
+/* checked mark aspect */
+
+.fake-checkbox__input:not(:checked) + label::after,
+.fake-checkbox__input:checked + label::after {
+  content: '';
+  background-image: url('~assets/img/fake-checkbox__mark.svg');
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  background-size: contain;
+  transition: all 0.2s;
+}
+
+/* checked mark aspect changes */
+
+.fake-checkbox__input:not(:checked) + label::after {
+  opacity: 0;
+  transform: scale(0);
+}
+.fake-checkbox__input:checked + label::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* disabled checkbox */
+
+.fake-checkbox__input:disabled:not(:checked) + label::before,
+.fake-checkbox__input:disabled:checked + label::before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+.fake-checkbox__input:disabled:checked + label::after {
+  color: #999;
+}
+.fake-checkbox__input:disabled + label {
+  color: #aaa;
+}
+
+/* hover style just for information */
+
+.fake-checkbox__label:hover::before {
+  border: 2px solid #4778d9 !important;
+}

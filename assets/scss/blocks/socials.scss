@@ -1,0 +1,21 @@
+.socials {
+  @include list-reset();
+
+  display: flex;
+
+  &__item {
+    margin-right: 28px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+    fill: white;
+
+    &--black {
+      fill: black;
+    }
+  }
+}

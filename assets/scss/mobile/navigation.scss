@@ -1,0 +1,11 @@
+//mobile menu
+@media screen and (max-width: $mobile-menu) {
+    .navigation {
+      flex-direction: column;
+      transition: 0.3s transform ease-in-out;
+    }
+
+    .navigation--offset {
+      transform: translate(-100vw, 0);
+    }
+  }

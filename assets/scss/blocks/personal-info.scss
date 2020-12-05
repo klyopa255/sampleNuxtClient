@@ -1,0 +1,162 @@
+.personal-info {
+  padding-top: 160px;
+  padding-left: 90px;
+  padding-right: 150px;
+
+  &__bg {
+    height: 415px;
+    position: absolute;
+    top: 97px;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+
+  &__wrapper {
+    min-width: 325px;
+    color: #fff;
+
+    &--min-mar-top {
+      margin-top: -120px;
+    }
+  }
+
+  &__summary-artist-info {
+    max-width: 800px;
+    padding-left: 10px;
+    align-self: start;
+    margin-left: 6.8%;
+
+    &--venue {
+      padding-top: 30px;
+    }
+  }
+
+  &__btn {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    margin-bottom: 24px;
+
+    &--mar-top {
+      margin-top: 100px;
+    }
+
+    &--edit {
+      color: #000;
+      background-color: #c5c5c5;
+
+      &--plus {
+        padding-left: 22px;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M17.3337 6.66669H14.667V14.6667H6.66699V17.3334H14.667V25.3334H17.3337V17.3334H25.3337V14.6667H17.3337V6.66669Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: 30% center;
+        background-size: 32px 32px;
+      }
+    }
+
+    &--follow {
+      background: #925ffe;
+
+      @include hover-active(#8253e8, #7346d2);
+    }
+
+    &--transparent {
+      border: 1px solid #000;
+      color: #000;
+    }
+
+    &--low {
+      margin-top: 40px;
+    }
+  }
+
+  &__img-button {
+    @include button-reset();
+
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    min-height: 96px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+
+    &--avatar {
+      margin-bottom: 0;
+      min-height: 325px;
+      background-color: #000;
+      background-image: url('~assets/img/defaultAvaProfile.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border: 1px solid #fff;
+    }
+  }
+
+  &__avatar {
+    position: relative;
+    background-color: #000;
+    background-image: url('~assets/img/defaultAvaProfile.png');
+    background-size: cover;
+    width: 325px;
+    height: 325px;
+    min-height: 325px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border: 1px solid #fff;
+
+    & img {
+      width: 100%;
+      height: auto;
+      background-color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 325px;
+    }
+  }
+
+  &__ava-change {
+    z-index: 5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+
+    & svg {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 12px;
+  }
+}

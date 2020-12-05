@@ -1,0 +1,25 @@
+@media screen and (max-width: 585px) {
+  .subscribe {
+    &__form {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  
+    &__input {
+      width: 100%;
+    }
+  
+    &__submit-btn {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      width: auto;
+      padding: 0 10px;
+    }
+  }
+
+  .subscribe__form .subscribe__submit-btn {
+    min-height: auto;
+  }
+}

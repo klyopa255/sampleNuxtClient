@@ -1,0 +1,22 @@
+@media screen and (max-width: 763px) {
+    .followers-info {
+        max-width: 100%;
+        color: #000;
+        align-items: center;
+        max-height: initial;
+        margin-bottom: 20px;
+
+        &__following--description  {
+            width: 30%;
+            justify-content: center;
+            
+            svg {
+                filter: invert(1);
+            }
+        }
+
+        &__following--term {
+            color: #000;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@media screen and (max-width: 1400px) {
+  .main {
+    background-size: auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main {
+    &__title {
+      width: auto;
+      margin: 0 20px;
+      font-size: 52px;
+      line-height: 1.1em;
+    }
+    
+    &__subscribe {
+      display: none;
+    }
+
+    &__container {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
+//for how it work mobile view
+@media screen and (max-width: 760px) {
+  .main--static-black {
+    background: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    &__search {
+      width: 100%;
+    }
+  }
+}

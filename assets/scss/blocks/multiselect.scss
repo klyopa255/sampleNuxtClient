@@ -1,0 +1,72 @@
+.multiselect {
+  & .multiselect__tags {
+    border: 1px solid #a8a8a8;
+    border-radius: 4px;
+    padding: 9px 16px;
+    padding-bottom: 2px;
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.3338 11.9976H6.66699L16.0004 19.9976L25.3338 11.9976Z' fill='black'/%3E%3C/svg%3E ");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: 97.9% 50%;
+  }
+
+  & .multiselect__tag {
+    background-color: #00a2ee;
+    border-radius: 20px;
+    margin-right: 8px;
+    padding-left: 20px;
+    padding-right: 38px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    display: flex;
+    max-width: unset;
+    font-family: Jost, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+    color: #fff;
+  }
+
+  & .multiselect__tags-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  & .multiselect__tag-icon {
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00015 9.4143L14.293 15.7071L15.7072 14.2929L9.41436 8.00009L15.7073 1.70712L14.2931 0.292908L8.00015 6.58588L1.70718 0.292908L0.292969 1.70712L6.58594 8.00009L0.293119 14.2929L1.70733 15.7071L8.00015 9.4143Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    right: 8px;
+
+    &:hover {
+      background-color: transparent;
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.00015 9.4143L14.293 15.7071L15.7072 14.2929L9.41436 8.00009L15.7073 1.70712L14.2931 0.292908L8.00015 6.58588L1.70718 0.292908L0.292969 1.70712L6.58594 8.00009L0.293119 14.2929L1.70733 15.7071L8.00015 9.4143Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+    }
+
+    &::after {
+      content: '';
+    }
+  }
+
+  & .multiselect__option {
+    white-space: normal;
+  }
+
+  & .multiselect__element:hover,
+  & .multiselect__option:hover,
+  & .multiselect__option--highlight {
+    background-color: #00a2ee;
+
+    &::after {
+      background-color: #00a2ee;
+    }
+  }
+
+  &__select {
+    z-index: -1;
+  }
+}
